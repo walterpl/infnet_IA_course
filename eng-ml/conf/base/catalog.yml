@@ -2,3 +2,19 @@
 #
 # Documentation for this file format can be found in "The Data Catalog"
 # Link: https://docs.kedro.org/en/stable/data/data_catalog.html
+
+raw_data:
+  type: pandas.CSV
+  filepath: eng-ml/data/01_raw/kobe_dataset.csv
+
+data_filtred:
+  type: pandas.ParquetDataSet
+  filepath: eng-ml/data/09_processed/data_filtered.parquet
+
+base_train:
+  type: pandas.ParquetDataSet
+  filepath: eng-ml/data/10_operalization/base_train.parquet
+
+base_test:
+  type: pandas.ParquetDataSet
+  filepath: eng-ml/data/10_operalization/base_test.parquet
