@@ -7,7 +7,7 @@ R: <https://github.com/walterpl/infnet_IA_course/tree/main/eng-ml>
 2- Iremos desenvolver um preditor de arremessos usando duas abordagens (regressão e classificação) para prever se o "Black Mamba" (apelido de Kobe) acertou ou errou a cesta.
 Para começar o desenvolvimento, desenhe um diagrama que demonstra todas as etapas necessárias em um projeto de inteligência artificial desde a aquisição de dados, passando pela criação dos modelos, indo até a operação do modelo.'
 
-R: 
+R:
 ![Diagram!](wflow_diagram.jpg)
 
 3- Descreva a importância de implementar pipelines de desenvolvimento e produção numa solução de aprendizado de máquinas.
@@ -23,6 +23,12 @@ percepção do usuário final.
 
 4- Como as ferramentas Streamlit, MLFlow, PyCaret e Scikit-Learn auxiliam na construção dos pipelines 
 descritos anteriormente? A resposta deve abranger os seguintes aspectos:
+
+5- Com base no diagrama realizado na questão 2, aponte os artefatos que serão criados ao longo de um projeto.
+Para cada artefato, indique qual seu objetivo.
+
+R: Os dataframes que seriam o data.csv, clean_data.parquet, train_base.parquet, test_base.parquet e o modelo
+best_model.pckl.
 
 R: Todas as ferramentas auxiliam em diferentes partes durante a produção de uma solução IA, começando pelo **MLFlow**, que
 é uma ferramente voltada para MLops, a qual nos permite manter o histórico de todos os modelos, seus parâmetros e seus 
@@ -86,4 +92,36 @@ D)  Registre a função custo "log loss" e F1_score para esse novo modelo.
 
 R: ![Original](best_ml_metrics.png)
 
-8- 
+8- Registre o modelo de classificação e o disponibilize através do MLFlow através de API.
+Selecione agora os dados da base de dados original onde shot_type for igual à 3PT Field Goal 
+(será uma nova base de dados) e através da biblioteca requests, aplique o modelo treinado. 
+Publique uma tabela com os resultados obtidos e indique o novo log loss e f1_score.
+
+R: ![Original](code_request.png)
+![Original](class_metric.png)
+
+A) O modelo é aderente a essa nova base? Justifique.
+
+R: Não, o modelo não é capaz de inferir se Kobe conseguiria pontuar a partir da linha de 3 pontos. O fato ocorreu
+pois diversas features relacionadas a distancia e posicionamento foram omitidas do treino, pois da perspectiva do modelo
+a distancia, latitude, longitude serão outliers para a cesta de 3 pontos e como todas estão acima dos treshold das de 2,
+o modelo definiu que Kobe não conseguiria marcar nenhum ponto. 
+
+B) Descreva como podemos monitorar a saúde do modelo no cenário com e sem a disponibilidade da variável resposta para o modelo em operação
+
+R: O caso de dados com labels é mais simples, pois basta frequentemente rodar o modelo contra os novos dados, coletar as métricas
+e comparar com o histório, caso um desvio acima do normal aconteça, analisar a qualidade dos dados ou reavalirar os hyperparametros
+do modelo se faz necessário. Para o caso onde não existe o label, a análise deve ser feita nos novos dados, os comparando
+com os dados históricos em busca de bruscas variações de média, covariância, corelação e etc, vale verificar também
+se alguma feature passou a assumir um valor antes inexistente(casos categóricos).
+
+C) Descreva as estratégias reativa e preditiva de retreinamento para o modelo em operação.
+
+R: A preditiva segue conforme mencionado na questão anterior, testes com uma determinada frequência contra a base de
+dados em diferentes folds e a medida que esses dados aumentam, diminuem ou mudem, os testes e os resultados históricos desses
+sempre apresentaram o comportamento o modelo ao longo do tempo. O caso reativo normalmente se da por reclamação ou aviso
+do usuário final e para entender onde o problema ocorreu, faz-se necessário descobrir o porquê da classificação do modelo
+para determinada entrada, um teste de shape para verificar o peso de cada featura para a tomada de decisão e a comparação
+das features de input com features da base histórica ajudam a verificar a razão de determinada classificação.
+
+9- 

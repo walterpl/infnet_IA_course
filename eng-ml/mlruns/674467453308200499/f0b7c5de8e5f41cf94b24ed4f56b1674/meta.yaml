@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/walterpereira/projetcs/IA_infnet/eng-ml/mlruns/674467453308200499/f0b7c5de8e5f41cf94b24ed4f56b1674/artifacts
+end_time: 1681677592587
+entry_point_name: ''
+experiment_id: '674467453308200499'
+lifecycle_stage: active
+run_id: f0b7c5de8e5f41cf94b24ed4f56b1674
+run_name: Gradient Boosting Classifier
+run_uuid: f0b7c5de8e5f41cf94b24ed4f56b1674
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1681677592130
+status: 3
+tags: []
+user_id: walterpereira

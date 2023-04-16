@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/walterpereira/projetcs/IA_infnet/eng-ml/mlruns/674467453308200499/ed2979de2b68410caeae13ee61bbaa77/artifacts
+end_time: 1681677548604
+entry_point_name: ''
+experiment_id: '674467453308200499'
+lifecycle_stage: active
+run_id: ed2979de2b68410caeae13ee61bbaa77
+run_name: Decision Tree Classifier
+run_uuid: ed2979de2b68410caeae13ee61bbaa77
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1681677548364
+status: 3
+tags: []
+user_id: walterpereira

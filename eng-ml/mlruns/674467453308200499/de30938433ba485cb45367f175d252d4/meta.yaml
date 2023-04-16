@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/walterpereira/projetcs/IA_infnet/eng-ml/mlruns/674467453308200499/de30938433ba485cb45367f175d252d4/artifacts
+end_time: 1681677549043
+entry_point_name: ''
+experiment_id: '674467453308200499'
+lifecycle_stage: active
+run_id: de30938433ba485cb45367f175d252d4
+run_name: Dummy Classifier
+run_uuid: de30938433ba485cb45367f175d252d4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1681677548713
+status: 3
+tags: []
+user_id: walterpereira

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/walterpereira/projetcs/IA_infnet/eng-ml/mlruns/674467453308200499/fdf2fc0a4cdc4e73b7789f556d187aad/artifacts
+end_time: 1681677544589
+entry_point_name: ''
+experiment_id: '674467453308200499'
+lifecycle_stage: active
+run_id: fdf2fc0a4cdc4e73b7789f556d187aad
+run_name: str
+run_uuid: fdf2fc0a4cdc4e73b7789f556d187aad
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1681677544339
+status: 3
+tags: []
+user_id: walterpereira
