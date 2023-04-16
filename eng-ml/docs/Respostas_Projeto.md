@@ -34,15 +34,56 @@ Scikit-Learn internamente para compilar os modelos e seus resultados são armaze
 porta de saída do modelo para a produção, pois é a partir dele que o modelo deixará o ambiente de desenvolvimento e será enviado
 ao ambiente de produção o tornando disponível via API.
 
-6- C) Explique como a escolha de treino e teste afetam o resultado do modelo final. Quais estratégias ajudam a minimizar
+5
+
+6- 
+
+A) Os dados devem estar localizados em "/Data/kobe_dataset.csv"
+
+R: 
+![DATA!](dados_gerados.png)
+
+B) A variável shot_made_flag será seu alvo, onde 0 indica que Kobe errou e 1 que a cesta foi realizada. O dataset resultante 
+será armazenado na pasta "/Data/processed/data_filtered.parquet". Ainda sobre essa seleção, qual a dimensão resultante 
+do dataset?
+
+R: 
+![DATA!](dados_gerados.png)
+![Original!](parametro_data_Set_completo.png)
+
+
+C) Explique como a escolha de treino e teste afetam o resultado do modelo final. Quais estratégias ajudam a minimizar
 os efeitos de viés de dados.
+
 
 R: Partindo do pressuposto que a classe está desbalanceada, a separação da mesma diretamente pelo método 80|20 pode 
 resultar é uma base de teste enviesada, onde a maioria dos dados pertencem a classe X, resultando em um modelo tendencioso a 
-escolher a classe X como resultado, caso a base de testa seja oposta a precisão tenderá a ser baixa, o mesmo para o f1-score e 
-talvez o recall seja um pouco maior. Três estratégias podem ser adotadas para evitar o vies dos dados desbalanceados, o primeiro
+escolher a classe X como resultado, caso a base de teste seja oposta a precisão tenderá a ser baixa, o mesmo para o f1-score entretanto 
+talvez o recall seja um pouco maior. Algumas estratégias podem ser adotadas para evitar o vies dos dados desbalanceados, o primeiro
 é excluir os dados da classe de maior incidência, caso o resultado final não seja uma base curta, o segundo método seria
-gerar valores sintéticos para a classe de menor incidência visando balancear a classe e ultima opção é excluir a feature caso
-o peso dela no modelo seja baixo ou tenha alta correlação com outra feature balanceada.
+gerar valores sintéticos para a classe de menor incidência visando balancear a classe, também podemos excluir a feature caso
+o peso dela no modelo seja baixo ou tenha alta correlação com outra feature balanceada e por ultimo a correlação cruzada 
+pode amenizar os efeitos da base enviesada pois dividirá a mesma em multiplas partes, efetuará multiplos treinamentos 
+testando essas partes menores umas contra as outras.
 
+D) Registre os parâmetros (% teste) e métricas (tamanho de cada base) no MlFlow
 
+R: 
+![Original!](test_train_param.png)
+
+7- 
+A e B)
+
+![Original](lr_metrics.png)
+
+c) Com os dados separados para treinamento, treine um modelo de classificação do sklearn usando a biblioteca pyCaret. 
+A escolha do algoritmo de classificação é livre. Justifique sua escolha.
+
+R: Continuando a utilizar a lib Pycarret, após testar todos os modelos uns contra os outros e utilizar o auto-tunning,
+o modelo com melhor resultado foi o Gradient Boosting classifier.
+
+D)  Registre a função custo "log loss" e F1_score para esse novo modelo.
+
+R: ![Original](best_ml_metrics.png)
+
+8- 

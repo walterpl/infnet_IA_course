@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/walterpereira/projetcs/IA_infnet/eng-ml/mlruns/716821534605702382/dc583b2b5bec4542aeeddaee465fb0dc/artifacts
+end_time: 1681596738197
+entry_point_name: ''
+experiment_id: '716821534605702382'
+lifecycle_stage: active
+run_id: dc583b2b5bec4542aeeddaee465fb0dc
+run_name: Linear Discriminant Analysis
+run_uuid: dc583b2b5bec4542aeeddaee465fb0dc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1681596738061
+status: 3
+tags: []
+user_id: walterpereira

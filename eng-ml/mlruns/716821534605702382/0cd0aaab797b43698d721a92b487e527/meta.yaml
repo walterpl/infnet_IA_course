@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/walterpereira/projetcs/IA_infnet/eng-ml/mlruns/716821534605702382/0cd0aaab797b43698d721a92b487e527/artifacts
+end_time: 1681596274624
+entry_point_name: ''
+experiment_id: '716821534605702382'
+lifecycle_stage: active
+run_id: 0cd0aaab797b43698d721a92b487e527
+run_name: Logistic Regression
+run_uuid: 0cd0aaab797b43698d721a92b487e527
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1681596274279
+status: 3
+tags: []
+user_id: walterpereira

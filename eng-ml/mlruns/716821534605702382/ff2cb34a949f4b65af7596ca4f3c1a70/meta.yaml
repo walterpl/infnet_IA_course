@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/walterpereira/projetcs/IA_infnet/eng-ml/mlruns/716821534605702382/ff2cb34a949f4b65af7596ca4f3c1a70/artifacts
+end_time: 1681596738706
+entry_point_name: ''
+experiment_id: '716821534605702382'
+lifecycle_stage: active
+run_id: ff2cb34a949f4b65af7596ca4f3c1a70
+run_name: Naive Bayes
+run_uuid: ff2cb34a949f4b65af7596ca4f3c1a70
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1681596738583
+status: 3
+tags: []
+user_id: walterpereira

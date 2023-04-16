@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/walterpereira/projetcs/IA_infnet/eng-ml/mlruns/716821534605702382/a9248eeedd93443fba06e3edcaf431d2/artifacts
+end_time: 1681596739703
+entry_point_name: ''
+experiment_id: '716821534605702382'
+lifecycle_stage: active
+run_id: a9248eeedd93443fba06e3edcaf431d2
+run_name: Extra Trees Classifier
+run_uuid: a9248eeedd93443fba06e3edcaf431d2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1681596739570
+status: 3
+tags: []
+user_id: walterpereira

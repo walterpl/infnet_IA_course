@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/walterpereira/projetcs/IA_infnet/eng-ml/mlruns/674467453308200499/b130096790a546d4b76452828daf3f4e/artifacts
+end_time: 1681603011832
+entry_point_name: ''
+experiment_id: '674467453308200499'
+lifecycle_stage: active
+run_id: b130096790a546d4b76452828daf3f4e
+run_name: Quadratic Discriminant Analysis
+run_uuid: b130096790a546d4b76452828daf3f4e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1681603011649
+status: 3
+tags: []
+user_id: walterpereira

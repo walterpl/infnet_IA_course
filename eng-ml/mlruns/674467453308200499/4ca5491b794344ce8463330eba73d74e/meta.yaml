@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/walterpereira/projetcs/IA_infnet/eng-ml/mlruns/674467453308200499/4ca5491b794344ce8463330eba73d74e/artifacts
+end_time: 1681603010292
+entry_point_name: ''
+experiment_id: '674467453308200499'
+lifecycle_stage: active
+run_id: 4ca5491b794344ce8463330eba73d74e
+run_name: Ridge Classifier
+run_uuid: 4ca5491b794344ce8463330eba73d74e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1681603010039
+status: 3
+tags: []
+user_id: walterpereira

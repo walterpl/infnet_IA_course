@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/walterpereira/projetcs/IA_infnet/eng-ml/mlruns/716821534605702382/22f42d26a2f6455db97f724a54d56882/artifacts
+end_time: 1681596739941
+entry_point_name: ''
+experiment_id: '716821534605702382'
+lifecycle_stage: active
+run_id: 22f42d26a2f6455db97f724a54d56882
+run_name: K Neighbors Classifier
+run_uuid: 22f42d26a2f6455db97f724a54d56882
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1681596739818
+status: 3
+tags: []
+user_id: walterpereira
