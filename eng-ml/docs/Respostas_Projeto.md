@@ -124,4 +124,6 @@ do usuário final e para entender onde o problema ocorreu, faz-se necessário de
 para determinada entrada, um teste de shape para verificar o peso de cada featura para a tomada de decisão e a comparação
 das features de input com features da base histórica ajudam a verificar a razão de determinada classificação.
 
-9- 
+9- Implemente um dashboard de monitoramento da operação usando Streamlit.
+
+R: ![Original](dashboard.png)
